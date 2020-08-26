@@ -16,6 +16,6 @@ var btn = document.getElementsByClassName('generate-btn')[0]
 btn.onclick = function() {
     var randomQuote = Math.floor(Math.random() * Quotes.length)
     
-    document.getElementsByClassName('quote')[0].innerHTML = Quotes[randomQuote].text
+document.getElementsByClassName('quote')[0].innerHTML = `<i class="fas fa-quote-left fa-3x"></i> ${Quotes[randomQuote].text}`
     document.getElementsByClassName('author')[0].innerHTML = Quotes[randomQuote].author
 }
